@@ -1,0 +1,107 @@
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ── Python bytecode / caches ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ── Build artifacts ───────────────────────────────────────────────────────────
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ── Local model / vector store data ───────────────────────────────────────────
+# HuggingFace / sentence-transformers downloads
+.huggingface/
+models/
+~/.cache/huggingface/
+# ChromaDB vector store data
+.chroma/
+chroma/
+chroma.sqlite3
+*.h5
+*.onnx
+*.pb
+*.pth
+*.pt
+
+# ── Runtime / app-generated files ─────────────────────────────────────────────
+# Downloaded audio/video from yt-dlp
+downloads/
+media/
+audio/
+*.mp3
+*.mp4
+*.wav
+*.m4a
+*.flac
+*.ogg
+*.webm
+# Generated exports (PDF / TXT summaries)
+exports/
+output/
+results/
+*.pdf
+*.txt
+*.log
+
+# ── Streamlit ─────────────────────────────────────────────────────────────────
+.streamlit/
+.streamlit/secrets.toml
+
+# ── IDE / editor ──────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.~lock.*
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.dylib
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.pyc
+.tox/
+.nox/
